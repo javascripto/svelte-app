@@ -1,14 +1,24 @@
 <script lang="ts">
 
-export let text = '';
-export let double = false;
-export let triple = false;
-export let operation = false;
-export let highlight = false;
+  export let text = '';
+  export let double = false;
+  export let triple = false;
+  export let operation = false;
+  export let highlight = false;
+  export let onClick = (value: string) => {};
 
+  function handleClick() {
+    onClick(text);
+  }
 </script>
 
-<button class="button" class:triple={triple} class:double class:operation class:highlight>
+<button
+  class="button"
+  class:triple
+  class:double
+  class:operation
+  class:highlight
+  on:click={handleClick}>
   {text}
 </button>
 
