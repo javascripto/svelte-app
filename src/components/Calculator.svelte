@@ -1,9 +1,11 @@
 <script>
   import Line from "./Line.svelte";
 	import Button from "./Button.svelte";
+  import Display from "./Display.svelte";
 </script>
 
 <div class="calculator">
+  <Display value="1234567890123456789" />
   <Line>
     <Button text="AC" triple highlight />
     <Button text="/" operation />
@@ -39,7 +41,7 @@
     height: 220px;
     display: flex;
     padding: 10px;
-    border-radius: 10px;;
+    border-radius: 10px;
     flex-direction: column;
     background-color: var(--bg-color);
   }
