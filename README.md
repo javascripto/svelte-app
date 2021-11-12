@@ -1,4 +1,9 @@
-# notes
+# Preview
+
+![image](https://user-images.githubusercontent.com/16804522/141390791-783aba9e-f08a-49b0-bae7-fa90e1202696.png)
+
+
+# Learning Notes
 
 - to initialize a svelte project run `npx degit sveltejs/template svelte-app` and install the dependencies
 - to configure a project with typescript run the script on `scripts/setupTypeScript.js` and add attribute lang="ts" in a script tag
