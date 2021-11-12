@@ -1,23 +1,23 @@
 <script lang="ts">
-	import Calculator from "./components/Calculator.svelte";
+  import Calculator from "./components/Calculator.svelte";
 </script>
 
 <main>
-	<Calculator />
+  <Calculator />
 </main>
 
 <style>
-	:global(body) {
-		background-color: black;
-	}
+  :global(body) {
+    background-color: black;
+  }
 
-	:root {
-		--bg-color: #555;
-	}
-	main {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-	}
+  :root {
+    --bg-color: #555;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 </style>
