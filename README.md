@@ -1,3 +1,18 @@
+# notes
+
+- to initialize a svelte project run `npx degit sveltejs/template svelte-app` and install the dependencies
+- to configure a project with typescript run the script on `scripts/setupTypeScript.js` and add attribute lang="ts" in a script tag
+- props are variables exported on script. example: `let prop: string = ''`
+- slot is something equivalent to children. example: `<slot/>`
+- styles are scoped
+- global styles needs `:global(body) {}` modifier
+- applying classes dynamically: `<div class:className={variable} />`. if the variable is boolean and have the same name as the class just use this: `<div class:variableWithClassName />`
+- handling events: ` <button on:click={handleClick} />`
+- the dollar sign is used for computed properties. it is useful to watch variables and update values. example: `$: unreadMessages = messages.filter(m => m.unread).length `
+- reactivity based on setting new values for variables and object properties
+
+---
+
 *Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
 
 *Looking for a shareable component template instead? You can [use SvelteKit for that as well](https://kit.svelte.dev/docs#packaging) or the older [sveltejs/component-template](https://github.com/sveltejs/component-template)*
